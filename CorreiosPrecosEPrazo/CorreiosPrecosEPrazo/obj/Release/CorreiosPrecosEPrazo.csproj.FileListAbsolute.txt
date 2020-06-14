@@ -1,0 +1,9 @@
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\bin\Release\CorreiosPrecosEPrazo.exe.config
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\bin\Release\CorreiosPrecosEPrazo.exe
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\bin\Release\CorreiosPrecosEPrazo.pdb
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Release\CorreiosPrecosEPrazo.csprojResolveAssemblyReference.cache
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Release\CorreiosPrecosEPrazo.PrecosEPrazo.resources
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Release\CorreiosPrecosEPrazo.Properties.Resources.resources
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Release\CorreiosPrecosEPrazo.csproj.GenerateResource.Cache
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Release\CorreiosPrecosEPrazo.exe
+C:\Projetos\CorreiosPrecosEPrazos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\Release\CorreiosPrecosEPrazo.pdb
