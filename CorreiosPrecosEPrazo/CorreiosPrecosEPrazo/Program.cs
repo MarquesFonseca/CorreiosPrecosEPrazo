@@ -13,7 +13,7 @@ using System.Data;
 //using System.Net;
 //using HtmlAgilityPack;
 //using System.Data;
-//Comentario
+
 namespace CorreiosPrecosEPrazo
 {
     static class Program
