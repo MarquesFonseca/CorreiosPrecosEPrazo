@@ -50,6 +50,7 @@ namespace CorreiosPrecosEPrazo
             tbDeclaracaoValor.Minimum = Convert.ToDecimal("0");
             tbDeclaracaoValor.Enabled = false;
             tbDeclaracaoValor.Value = 0;
+            //cbDeclaracaoDeValor.Checked = true;
 
             cbAvisoRecebimento.Checked = true;
 
