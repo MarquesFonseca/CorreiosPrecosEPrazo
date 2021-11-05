@@ -115,7 +115,10 @@ namespace CorreiosPrecosEPrazo.Correios
 
             if (nCdServico == ConfiguracoesExcel.CodigoSARAParaCartaRegistrada)
             {
-                url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrazo?sCepOrigem=" + sCepOrigem + "&sCepDestino=" + sCepDestino + "&nCdServico=" + nCdServico + "&StrRetorno=xml";
+                //url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrazo?sCepOrigem=" + sCepOrigem + "&sCepDestino=" + sCepDestino + "&nCdServico=" + nCdServico + "&StrRetorno=xml";
+
+                url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrazo?nCdEmpresa=" + nCdEmpresa + "&sDsSenha=" + sDsSenha + "&sCepOrigem =" + sCepOrigem + "&sCepDestino=" + sCepDestino + "&nCdServico=" + nCdServico + "&StrRetorno=xml";
+
                 string retornoPrazos = Conexao.consultarCorreios(url);
                 return CorreiosSerialization.GetObject<cResultado>(retornoPrazos);
             }

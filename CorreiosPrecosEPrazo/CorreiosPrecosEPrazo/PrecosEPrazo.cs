@@ -36,6 +36,7 @@ namespace CorreiosPrecosEPrazo
             tbCepDestino.Text = ConfiguracoesExcel.CEPOrigem;
 
             panelResultado.Visible = false; // esconde a tela com os dados calculados
+            tabControl1.SelectedTab = tabPage1;
             // Mostra apenas as entradas obrigatórias para Caixa/Pacote
             tbLargura.Enabled = true;
             tbComprimento.Enabled = true;
@@ -98,8 +99,8 @@ namespace CorreiosPrecosEPrazo
             configuraOpçoesResultado();
 
             /// Declaração de variáveis para passar como parâmetro
-            string CdEmpresa = "";
-            string DsSenha = "";
+            string CdEmpresa = TxtContrato.Text;
+            string DsSenha = TxtSenha.Text;
             List<string> listaCodigos = retornarServico();
             string cepDeOrigem = tbCepOrigem.Text;
             string cepDeDestino = tbCepDestino.Text;
@@ -164,7 +165,7 @@ namespace CorreiosPrecosEPrazo
                 if (precoEPrazo != null)
                 {
                     panelResultado.Visible = true; // Mostra o painel que estava oculto
-
+                    tabControl1.SelectedTab = tabPage2;
                     inicializarEntradas(precoEPrazo); // inicializa as entradas de acordo com o retorno dos Correios
                 }
             }
@@ -232,6 +233,7 @@ namespace CorreiosPrecosEPrazo
         private void btnFechar_Click(object sender, EventArgs e)
         {
             panelResultado.Visible = false;
+            tabControl1.SelectedTab = tabPage1;
             reiniciarEntradasDoSedex();
             reiniciarEntradasDoPAC();
             reiniciarEntradasDoSedex12();
@@ -423,6 +425,34 @@ namespace CorreiosPrecosEPrazo
         ///
         private void escolherCodigo(string codigo, cResultado.Servicos.cServico precoEPrazo)
         {
+            if (codigo == ConfiguracoesExcel.CodigoSARAParaCartaRegistrada)
+            {
+                inicializarCartaRegistrada(precoEPrazo);
+            }
+            else if (codigo == ConfiguracoesExcel.CodigoSARAParaSEDEX)
+            {
+                inicializarSedex(precoEPrazo);
+            }
+            else if (codigo == ConfiguracoesExcel.CodigoSARAParaPAC)
+            {
+                inicializarPAC(precoEPrazo);
+            }
+            else if (codigo == ConfiguracoesExcel.CodigoSARAParaSEDEX12)
+            {
+                inicializarSedex12(precoEPrazo);
+            }
+            else if (codigo == ConfiguracoesExcel.CodigoSARAParaSEDEX10)
+            {
+                inicializarSedex10(precoEPrazo);
+            }
+            else if (codigo == ConfiguracoesExcel.CodigoSARAParaSEDEXHoje)
+            {
+                inicializarSedexHoje(precoEPrazo);
+            }
+
+
+
+
             /*
             04014 SEDEX à vista 
             04510 PAC à vista 
@@ -432,10 +462,15 @@ namespace CorreiosPrecosEPrazo
             */
             switch (codigo)
             {
+                case "03220": //03220 SEDEX A FATURAR
+                case "3220":
                 case "04014":  //04014 SEDEX à vista 
                 case "4014":
                     inicializarSedex(precoEPrazo);
                     break;
+
+                case "03298": //03298 PAC A FATURAR
+                case "3298":
                 case "04510": //04510 PAC à vista
                 case "4510":
                     inicializarPAC(precoEPrazo);

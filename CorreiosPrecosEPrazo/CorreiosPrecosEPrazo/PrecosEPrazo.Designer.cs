@@ -245,7 +245,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.tbDeclaracaoValor = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
             this.checkBoxOpcaoSedex = new System.Windows.Forms.CheckBox();
             this.checkBoxOpcaoPAC = new System.Windows.Forms.CheckBox();
             this.checkBoxOpcaoCartaRegistrada = new System.Windows.Forms.CheckBox();
@@ -254,6 +253,10 @@
             this.checkBoxOpcaoSedexHoje = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TxtSenha = new System.Windows.Forms.TextBox();
+            this.TxtContrato = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnBuscarDimensoesCaixa = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -263,6 +266,9 @@
             this.cbPagamentoEntrega = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.LbRegiaoSelecionada = new System.Windows.Forms.Label();
+            this.panel84 = new System.Windows.Forms.Panel();
+            this.LblBuscaCEP = new System.Windows.Forms.Label();
+            this.pictureBoxBuscarCep = new System.Windows.Forms.PictureBox();
             this.rbPorCEP = new System.Windows.Forms.RadioButton();
             this.rbPorRegiao = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -273,9 +279,11 @@
             this.LbValorTotalAdicional = new System.Windows.Forms.Label();
             this.BtnBuscarProdutosAdicionais = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.pictureBoxBuscarCep = new System.Windows.Forms.PictureBox();
-            this.LblBuscaCEP = new System.Windows.Forms.Label();
-            this.panel84 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -389,9 +397,12 @@
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBuscarCep)).BeginInit();
             this.panel84.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBuscarCep)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -1909,6 +1920,7 @@
             // 
             // panelResultado
             // 
+            this.panelResultado.Controls.Add(this.label7);
             this.panelResultado.Controls.Add(this.tableLayoutPanel1);
             this.panelResultado.Controls.Add(this.btnFechar);
             this.panelResultado.Controls.Add(this.panel26);
@@ -1923,7 +1935,7 @@
             this.panelResultado.Controls.Add(this.panel4);
             this.panelResultado.Controls.Add(this.panel3);
             this.panelResultado.Controls.Add(this.panel1);
-            this.panelResultado.Location = new System.Drawing.Point(0, 0);
+            this.panelResultado.Location = new System.Drawing.Point(5, 5);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(2);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(1317, 564);
@@ -3056,7 +3068,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnBuscar.Location = new System.Drawing.Point(11, 530);
+            this.btnBuscar.Location = new System.Drawing.Point(5, 516);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(114, 34);
@@ -3237,18 +3249,6 @@
             this.tbDeclaracaoValor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbDeclaracaoValor_KeyDown);
             this.tbDeclaracaoValor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tbDeclaracaoValor_MouseDown);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label7.Location = new System.Drawing.Point(11, 572);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(549, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Desenvolvido por: Marques Fonseca (63) 99208-2269 - AC Via Palmas Brasil";
-            // 
             // checkBoxOpcaoSedex
             // 
             this.checkBoxOpcaoSedex.AutoSize = true;
@@ -3297,7 +3297,6 @@
             // checkBoxOpcaoSedex12
             // 
             this.checkBoxOpcaoSedex12.AutoSize = true;
-            this.checkBoxOpcaoSedex12.Enabled = false;
             this.checkBoxOpcaoSedex12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxOpcaoSedex12.Location = new System.Drawing.Point(352, 22);
             this.checkBoxOpcaoSedex12.Margin = new System.Windows.Forms.Padding(2);
@@ -3306,13 +3305,11 @@
             this.checkBoxOpcaoSedex12.TabIndex = 4;
             this.checkBoxOpcaoSedex12.Text = "SEDEX 12";
             this.checkBoxOpcaoSedex12.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedex12.Visible = false;
             this.checkBoxOpcaoSedex12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedex12_KeyDown);
             // 
             // checkBoxOpcaoSedex10
             // 
             this.checkBoxOpcaoSedex10.AutoSize = true;
-            this.checkBoxOpcaoSedex10.Enabled = false;
             this.checkBoxOpcaoSedex10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxOpcaoSedex10.Location = new System.Drawing.Point(466, 22);
             this.checkBoxOpcaoSedex10.Margin = new System.Windows.Forms.Padding(2);
@@ -3321,13 +3318,11 @@
             this.checkBoxOpcaoSedex10.TabIndex = 5;
             this.checkBoxOpcaoSedex10.Text = "SEDEX 10";
             this.checkBoxOpcaoSedex10.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedex10.Visible = false;
             this.checkBoxOpcaoSedex10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedex10_KeyDown);
             // 
             // checkBoxOpcaoSedexHoje
             // 
             this.checkBoxOpcaoSedexHoje.AutoSize = true;
-            this.checkBoxOpcaoSedexHoje.Enabled = false;
             this.checkBoxOpcaoSedexHoje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxOpcaoSedexHoje.Location = new System.Drawing.Point(574, 22);
             this.checkBoxOpcaoSedexHoje.Margin = new System.Windows.Forms.Padding(2);
@@ -3336,7 +3331,6 @@
             this.checkBoxOpcaoSedexHoje.TabIndex = 6;
             this.checkBoxOpcaoSedexHoje.Text = "SEDEX HOJE";
             this.checkBoxOpcaoSedexHoje.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedexHoje.Visible = false;
             this.checkBoxOpcaoSedexHoje.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedexHoje_KeyDown);
             // 
             // groupBox1
@@ -3348,7 +3342,7 @@
             this.groupBox1.Controls.Add(this.checkBoxOpcaoSedex12);
             this.groupBox1.Controls.Add(this.checkBoxOpcaoSedex10);
             this.groupBox1.Controls.Add(this.checkBoxOpcaoSedexHoje);
-            this.groupBox1.Location = new System.Drawing.Point(15, 273);
+            this.groupBox1.Location = new System.Drawing.Point(9, 267);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(723, 53);
             this.groupBox1.TabIndex = 3;
@@ -3356,14 +3350,58 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.TxtSenha);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.TxtContrato);
             this.groupBox2.Controls.Add(this.tbCepOrigem);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Location = new System.Drawing.Point(6, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(137, 100);
+            this.groupBox2.Size = new System.Drawing.Size(273, 100);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
+            // 
+            // TxtSenha
+            // 
+            this.TxtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSenha.Location = new System.Drawing.Point(127, 69);
+            this.TxtSenha.Name = "TxtSenha";
+            this.TxtSenha.Size = new System.Drawing.Size(136, 26);
+            this.TxtSenha.TabIndex = 10;
+            this.TxtSenha.Text = "quorr";
+            // 
+            // TxtContrato
+            // 
+            this.TxtContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtContrato.Location = new System.Drawing.Point(127, 25);
+            this.TxtContrato.Name = "TxtContrato";
+            this.TxtContrato.Size = new System.Drawing.Size(136, 26);
+            this.TxtContrato.TabIndex = 10;
+            this.TxtContrato.Text = "21392153";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(126, 8);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Contrato";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(124, 52);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 17);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Senha";
             // 
             // groupBox3
             // 
@@ -3375,7 +3413,7 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.rbCilindro);
             this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Location = new System.Drawing.Point(15, 115);
+            this.groupBox3.Location = new System.Drawing.Point(9, 109);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(723, 152);
             this.groupBox3.TabIndex = 2;
@@ -3430,7 +3468,7 @@
             this.groupBox6.Controls.Add(this.cbPagamentoEntrega);
             this.groupBox6.Controls.Add(this.cbDeclaracaoDeValor);
             this.groupBox6.Controls.Add(this.LbInformeOValorDeclarado);
-            this.groupBox6.Location = new System.Drawing.Point(15, 332);
+            this.groupBox6.Location = new System.Drawing.Point(9, 326);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(723, 90);
             this.groupBox6.TabIndex = 4;
@@ -3473,9 +3511,9 @@
             this.groupBox7.Controls.Add(this.label4);
             this.groupBox7.Controls.Add(this.LbCEPDestino);
             this.groupBox7.Controls.Add(this.tbCepDestino);
-            this.groupBox7.Location = new System.Drawing.Point(155, 12);
+            this.groupBox7.Location = new System.Drawing.Point(285, 6);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(583, 100);
+            this.groupBox7.Size = new System.Drawing.Size(447, 100);
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             // 
@@ -3490,6 +3528,36 @@
             this.LbRegiaoSelecionada.Size = new System.Drawing.Size(0, 20);
             this.LbRegiaoSelecionada.TabIndex = 5;
             this.LbRegiaoSelecionada.Tag = "";
+            // 
+            // panel84
+            // 
+            this.panel84.Controls.Add(this.LblBuscaCEP);
+            this.panel84.Location = new System.Drawing.Point(154, 46);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(288, 50);
+            this.panel84.TabIndex = 8;
+            // 
+            // LblBuscaCEP
+            // 
+            this.LblBuscaCEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblBuscaCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblBuscaCEP.ForeColor = System.Drawing.Color.Blue;
+            this.LblBuscaCEP.Location = new System.Drawing.Point(0, 0);
+            this.LblBuscaCEP.Name = "LblBuscaCEP";
+            this.LblBuscaCEP.Size = new System.Drawing.Size(288, 50);
+            this.LblBuscaCEP.TabIndex = 7;
+            this.LblBuscaCEP.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // pictureBoxBuscarCep
+            // 
+            this.pictureBoxBuscarCep.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBuscarCep.Image")));
+            this.pictureBoxBuscarCep.Location = new System.Drawing.Point(115, 67);
+            this.pictureBoxBuscarCep.Name = "pictureBoxBuscarCep";
+            this.pictureBoxBuscarCep.Size = new System.Drawing.Size(33, 28);
+            this.pictureBoxBuscarCep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBuscarCep.TabIndex = 6;
+            this.pictureBoxBuscarCep.TabStop = false;
+            this.pictureBoxBuscarCep.Click += new System.EventHandler(this.pictureBoxBuscarCep_Click);
             // 
             // rbPorCEP
             // 
@@ -3533,7 +3601,7 @@
             this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLimpar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnLimpar.Location = new System.Drawing.Point(624, 530);
+            this.BtnLimpar.Location = new System.Drawing.Point(618, 516);
             this.BtnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnLimpar.Name = "BtnLimpar";
             this.BtnLimpar.Size = new System.Drawing.Size(114, 34);
@@ -3561,7 +3629,7 @@
             this.groupBox8.Controls.Add(this.label2);
             this.groupBox8.Controls.Add(this.BtnBuscarProdutosAdicionais);
             this.groupBox8.Controls.Add(this.listBox1);
-            this.groupBox8.Location = new System.Drawing.Point(14, 428);
+            this.groupBox8.Location = new System.Drawing.Point(8, 422);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(724, 95);
             this.groupBox8.TabIndex = 5;
@@ -3616,35 +3684,70 @@
             this.listBox1.TabStop = false;
             this.listBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listBox1_KeyDown);
             // 
-            // pictureBoxBuscarCep
+            // tabControl1
             // 
-            this.pictureBoxBuscarCep.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBuscarCep.Image")));
-            this.pictureBoxBuscarCep.Location = new System.Drawing.Point(115, 67);
-            this.pictureBoxBuscarCep.Name = "pictureBoxBuscarCep";
-            this.pictureBoxBuscarCep.Size = new System.Drawing.Size(33, 28);
-            this.pictureBoxBuscarCep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBuscarCep.TabIndex = 6;
-            this.pictureBoxBuscarCep.TabStop = false;
-            this.pictureBoxBuscarCep.Click += new System.EventHandler(this.pictureBoxBuscarCep_Click);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1323, 601);
+            this.tabControl1.TabIndex = 5;
             // 
-            // LblBuscaCEP
+            // tabPage1
             // 
-            this.LblBuscaCEP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblBuscaCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBuscaCEP.ForeColor = System.Drawing.Color.Blue;
-            this.LblBuscaCEP.Location = new System.Drawing.Point(0, 0);
-            this.LblBuscaCEP.Name = "LblBuscaCEP";
-            this.LblBuscaCEP.Size = new System.Drawing.Size(430, 50);
-            this.LblBuscaCEP.TabIndex = 7;
-            this.LblBuscaCEP.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox8);
+            this.tabPage1.Controls.Add(this.groupBox7);
+            this.tabPage1.Controls.Add(this.groupBox6);
+            this.tabPage1.Controls.Add(this.btnBuscar);
+            this.tabPage1.Controls.Add(this.BtnLimpar);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1315, 575);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Parâmetros";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // panel84
+            // tabPage2
             // 
-            this.panel84.Controls.Add(this.LblBuscaCEP);
-            this.panel84.Location = new System.Drawing.Point(150, 46);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(430, 50);
-            this.panel84.TabIndex = 8;
+            this.tabPage2.Controls.Add(this.panelResultado);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1315, 575);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Resultado";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label7.Location = new System.Drawing.Point(16, 522);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(593, 20);
+            this.label7.TabIndex = 97;
+            this.label7.Text = "Desenvolvido por: Marques Fonseca (63) 99208-2269 - Atualização dia 04/11/2021";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label15.Location = new System.Drawing.Point(16, 552);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(593, 20);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Desenvolvido por: Marques Fonseca (63) 99208-2269 - Atualização dia 04/11/2021";
             // 
             // PrecosEPrazo
             // 
@@ -3652,16 +3755,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1323, 601);
-            this.Controls.Add(this.panelResultado);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.BtnLimpar);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -3725,6 +3819,7 @@
             this.panel52.ResumeLayout(false);
             this.panel62.ResumeLayout(false);
             this.panelResultado.ResumeLayout(false);
+            this.panelResultado.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.PainelSedex.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSedexPagamentoEntrega)).EndInit();
@@ -3792,12 +3887,15 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.panel84.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBuscarCep)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBuscarCep)).EndInit();
-            this.panel84.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -3960,7 +4058,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown tbDeclaracaoValor;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel71;
         private System.Windows.Forms.RichTextBox rtbObsSedex12;
@@ -4050,6 +4147,15 @@
         private System.Windows.Forms.PictureBox pictureBoxBuscarCep;
         private System.Windows.Forms.Label LblBuscaCEP;
         private System.Windows.Forms.Panel panel84;
+        private System.Windows.Forms.TextBox TxtSenha;
+        private System.Windows.Forms.TextBox TxtContrato;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label15;
     }
 }
 

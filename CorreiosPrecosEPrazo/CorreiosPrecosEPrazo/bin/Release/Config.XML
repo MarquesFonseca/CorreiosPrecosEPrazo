@@ -1,7 +1,11 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Config>
+    <Nome>FecharAplicacoesAbertas</Nome>
+    <Valor>0</Valor>
+  </Config>
+  <Config>
     <Nome>ChaveAcesso</Nome>
-    <Valor>ncfu+/7Wzc/6WsYDvNYDWA==</Valor>
+    <Valor>drOyCAr5xobtKQFhxLa9fA==</Valor>
   </Config>
 </DocumentElement>
