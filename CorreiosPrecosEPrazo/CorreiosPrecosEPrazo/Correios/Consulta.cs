@@ -113,7 +113,7 @@ namespace CorreiosPrecosEPrazo.Correios
             valorDiametro = Helpers.retornarDecimalString(nVlDiametro);
             string url = string.Empty;
 
-            if (nCdServico == ConfiguracoesExcel.CodigoSARAParaCartaRegistrada)
+            if (nCdServico == ConfiguracoesExcel.CodigoSARAParaCartaRegistradaAVista)
             {
                 //url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrazo?sCepOrigem=" + sCepOrigem + "&sCepDestino=" + sCepDestino + "&nCdServico=" + nCdServico + "&StrRetorno=xml";
 

@@ -35,12 +35,21 @@ namespace CorreiosPrecosEPrazo
                         ValorPorteEntre400gE450g = dt.Rows[14][1].ToString().Replace("R$ ", "");
                         ValorPorteEntre450gE500g = dt.Rows[15][1].ToString().Replace("R$ ", "");
                         RegistroCarta = dt.Rows[16][1].ToString().Replace("R$ ", "");
-                        CodigoSARAParaCartaRegistrada = dt.Rows[17][1].ToString();
-                        CodigoSARAParaSEDEX = dt.Rows[18][1].ToString();
-                        CodigoSARAParaPAC = dt.Rows[19][1].ToString();
-                        CodigoSARAParaSEDEX12 = dt.Rows[20][1].ToString();
-                        CodigoSARAParaSEDEX10 = dt.Rows[21][1].ToString();
-                        CodigoSARAParaSEDEXHoje = dt.Rows[22][1].ToString();
+
+                        CodigoSARAParaCartaRegistradaAVista = dt.Rows[17][1].ToString();
+                        CodigoSARAParaSEDEXAVista = dt.Rows[18][1].ToString();
+                        CodigoSARAParaPACAVista = dt.Rows[19][1].ToString();
+                        CodigoSARAParaSEDEX12AVista = dt.Rows[20][1].ToString();
+                        CodigoSARAParaSEDEX10AVista = dt.Rows[21][1].ToString();
+                        CodigoSARAParaSEDEXHojeAVista = dt.Rows[22][1].ToString();
+
+                        CodigoSARAParaCartaRegistradaAFaturar = dt.Rows[23][1].ToString();
+                        CodigoSARAParaSEDEXAFaturar = dt.Rows[24][1].ToString();
+                        CodigoSARAParaPACAFaturar = dt.Rows[25][1].ToString();
+                        CodigoSARAParaPACMiniAFaturar = dt.Rows[26][1].ToString();
+                        CodigoSARAParaSEDEX12AFaturar = dt.Rows[27][1].ToString();
+                        CodigoSARAParaSEDEX10AFaturar = dt.Rows[28][1].ToString();
+                        CodigoSARAParaSEDEXHojeAFaturar = dt.Rows[29][1].ToString();
                     }
                     else
                     {
@@ -71,12 +80,20 @@ namespace CorreiosPrecosEPrazo
         public static string ValorPorteEntre400gE450g;
         public static string ValorPorteEntre450gE500g;
         public static string RegistroCarta;
-        public static string CodigoSARAParaCartaRegistrada;
-        public static string CodigoSARAParaSEDEX;
-        public static string CodigoSARAParaPAC;
-        public static string CodigoSARAParaSEDEX12;
-        public static string CodigoSARAParaSEDEX10;
-        public static string CodigoSARAParaSEDEXHoje;
+        public static string CodigoSARAParaCartaRegistradaAVista;
+        public static string CodigoSARAParaSEDEXAVista;
+        public static string CodigoSARAParaPACAVista;
+        public static string CodigoSARAParaSEDEX12AVista;
+        public static string CodigoSARAParaSEDEX10AVista;
+        public static string CodigoSARAParaSEDEXHojeAVista;
+
+        public static string CodigoSARAParaCartaRegistradaAFaturar;
+        public static string CodigoSARAParaSEDEXAFaturar;
+        public static string CodigoSARAParaPACAFaturar;
+        public static string CodigoSARAParaPACMiniAFaturar;
+        public static string CodigoSARAParaSEDEX12AFaturar;
+        public static string CodigoSARAParaSEDEX10AFaturar;
+        public static string CodigoSARAParaSEDEXHojeAFaturar;
 
 
 

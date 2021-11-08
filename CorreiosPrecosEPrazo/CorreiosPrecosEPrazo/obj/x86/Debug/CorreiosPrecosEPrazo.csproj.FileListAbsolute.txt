@@ -48,3 +48,4 @@ C:\Projetos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\x
 C:\Projetos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\x86\Debug\CorreiosPrecosEPrazo.PrecosEPrazo.resources
 C:\Projetos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\x86\Debug\CorreiosPrecosEPrazo.Properties.Resources.resources
 C:\Projetos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\x86\Debug\CorreiosPrecosEPrazo.csproj.GenerateResource.Cache
+C:\Projetos\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\CorreiosPrecosEPrazo\obj\x86\Debug\CorreiosPrecosEPrazo.PrecosEPrazoContrato.resources

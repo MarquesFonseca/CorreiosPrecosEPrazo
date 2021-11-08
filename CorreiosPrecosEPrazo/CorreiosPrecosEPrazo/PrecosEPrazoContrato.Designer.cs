@@ -1,6 +1,6 @@
 ﻿namespace CorreiosPrecosEPrazo
 {
-    partial class PrecosEPrazo
+    partial class PrecosEPrazoContrato
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -3764,7 +3764,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Correios - Simulador de Preços e Prazos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.PrecosEPrazoContrato_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PrecosEPrazo_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

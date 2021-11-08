@@ -148,6 +148,12 @@
     <Compile Include="ClassesDiversas\ImportarArquivos.cs" />
     <Compile Include="ClassesDiversas\Mensagens.cs" />
     <Compile Include="ClassesDiversas\Mensagens2.cs" />
+    <Compile Include="PrecosEPrazoContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrecosEPrazoContrato.Designer.cs">
+      <DependentUpon>PrecosEPrazoContrato.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrecosEPrazo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPlan.resx">
       <DependentUpon>FormPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrecosEPrazoContrato.resx">
+      <DependentUpon>PrecosEPrazoContrato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrecosEPrazo.resx">
       <DependentUpon>PrecosEPrazo.cs</DependentUpon>

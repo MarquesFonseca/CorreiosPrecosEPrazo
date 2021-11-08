@@ -14,18 +14,18 @@ using System.Threading.Tasks;
 
 namespace CorreiosPrecosEPrazo
 {
-    public partial class PrecosEPrazo : Form
+    public partial class PrecosEPrazoContrato : Form
     {
         bool selectByMouse = false;
         private decimal ValorTotalProdutosAdicionados = 0;
 
-        public PrecosEPrazo()
+        public PrecosEPrazoContrato()
         {
             InitializeComponent();
             ConfiguracoesExcel.CarregaConfiguracoesExcel();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void PrecosEPrazoContrato_Load(object sender, EventArgs e)
         {
             cbMaoPropria.Text = string.Format("&Mão própria - {0}", Helpers.returnDinheiro(ConfiguracoesExcel.MaoPropria));
             cbAvisoRecebimento.Text = string.Format("&Aviso de recebimento - {0}", Helpers.returnDinheiro(ConfiguracoesExcel.AvisoRecebimento));
