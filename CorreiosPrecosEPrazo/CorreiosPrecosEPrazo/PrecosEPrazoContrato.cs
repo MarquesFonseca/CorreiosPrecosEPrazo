@@ -41,9 +41,6 @@ namespace CorreiosPrecosEPrazo
             tbLargura.Enabled = true;
             tbComprimento.Enabled = true;
             tbAltura.Enabled = true;
-            LblDiametro.Enabled = false;
-            tbDiametro.Enabled = false;
-            //////
 
             ToMoney(tbDeclaracaoValor, "N2");
 
@@ -56,9 +53,6 @@ namespace CorreiosPrecosEPrazo
             cbAvisoRecebimento.Checked = true;
 
             LbRegiaoSelecionada.Visible = false;
-
-            checkBoxOpcaoCartaRegistrada.Checked = false;
-            checkBoxOpcaoCartaRegistrada.Enabled = false;
 
             tbCepDestino.Focus();
             tbCepDestino.SelectAll();
@@ -109,26 +103,10 @@ namespace CorreiosPrecosEPrazo
             decimal comprimento = Helpers.returnDecimal(tbComprimento.Text);
             decimal altura = Helpers.returnDecimal(tbAltura.Text);
             decimal largura = Helpers.returnDecimal(tbLargura.Text);
-            decimal diametro = Helpers.returnDecimal(tbDiametro.Text);
             string maoPropria = "N";
             decimal valorDeclarado = 0;
             string avisoDeRecebimento = "N";
             ////////////////////////////////////////
-
-            /// Validação das entradas ////
-            if (rbCaixa.Checked)
-            {
-                formato = 1;
-            }
-            else if (rbCilindro.Checked)
-            {
-                formato = 2;
-            }
-            else
-            {
-                formato = 3;
-            }
-
 
             if (cbMaoPropria.Checked)
             {
@@ -160,7 +138,7 @@ namespace CorreiosPrecosEPrazo
             foreach (string Codigo in listaCodigos)
             {
                 //Chamada do procedimento para consultar preços e prazos nos correios
-                cResultado precoEPrazo = Consulta.ConsultarPrecosEPrazos(CdEmpresa, DsSenha, Codigo, cepDeOrigem, cepDeDestino, peso, formato, comprimento, altura, largura, diametro, maoPropria, valorDeclarado, avisoDeRecebimento);
+                cResultado precoEPrazo = Consulta.ConsultarPrecosEPrazos(CdEmpresa, DsSenha, Codigo, cepDeOrigem, cepDeDestino, peso, formato, comprimento, altura, largura, 0, maoPropria, valorDeclarado, avisoDeRecebimento);
 
                 if (precoEPrazo != null)
                 {
@@ -171,7 +149,7 @@ namespace CorreiosPrecosEPrazo
             }
 
             this.Cursor = Cursors.Default;
-        }        
+        }
 
         private void EscreveArquivoCEPOrigem(string text)
         {
@@ -216,12 +194,12 @@ namespace CorreiosPrecosEPrazo
 
         private void configuraOpçoesResultado()
         {
-            PainelSedex.Visible = checkBoxOpcaoSedex.Checked;
-            PainelPAC.Visible = checkBoxOpcaoPAC.Checked;
-            PainelCartaRegistrada.Visible = checkBoxOpcaoCartaRegistrada.Checked;
-            PainelSedex12.Visible = checkBoxOpcaoSedex12.Checked;
-            PainelSedex10.Visible = checkBoxOpcaoSedex10.Checked;
-            PainelSedexHoje.Visible = checkBoxOpcaoSedexHoje.Checked;
+            //PainelSedex.Visible = checkBoxOpcaoSedex.Checked;
+            //PainelPAC.Visible = checkBoxOpcaoPAC.Checked;
+            //PainelCartaRegistrada.Visible = checkBoxOpcaoCartaRegistrada.Checked;
+            //PainelSedex12.Visible = checkBoxOpcaoSedex12.Checked;
+            //PainelSedex10.Visible = checkBoxOpcaoSedex10.Checked;
+            //PainelSedexHoje.Visible = checkBoxOpcaoSedexHoje.Checked;
         }
 
         /// <summary>
@@ -261,12 +239,6 @@ namespace CorreiosPrecosEPrazo
             tbComprimento.Enabled = true;
             LblComprimento.Enabled = true;
 
-            tbDiametro.Enabled = false;
-            LblDiametro.Enabled = false;
-
-            checkBoxOpcaoCartaRegistrada.Checked = false;
-            checkBoxOpcaoCartaRegistrada.Enabled = false;
-
             BtnBuscarDimensoesCaixa.Enabled = true;
         }
 
@@ -287,14 +259,6 @@ namespace CorreiosPrecosEPrazo
             tbAltura.Enabled = false;
             LblAltura.Enabled = false;
 
-            tbDiametro.Enabled = false;
-            LblDiametro.Enabled = false;
-
-            checkBoxOpcaoPAC.Checked = false;
-
-            checkBoxOpcaoCartaRegistrada.Checked = true;
-            checkBoxOpcaoCartaRegistrada.Enabled = true;
-
             BtnBuscarDimensoesCaixa.Enabled = true;
         }
 
@@ -314,12 +278,6 @@ namespace CorreiosPrecosEPrazo
 
             tbAltura.Enabled = false;
             LblAltura.Enabled = false;
-
-            tbDiametro.Enabled = true;
-            LblDiametro.Enabled = true;
-
-            checkBoxOpcaoCartaRegistrada.Checked = false;
-            checkBoxOpcaoCartaRegistrada.Enabled = false;
 
             BtnBuscarDimensoesCaixa.Enabled = false;
         }
@@ -382,23 +340,25 @@ namespace CorreiosPrecosEPrazo
         ///
         private List<string> retornarServico()
         {
-            /*
-            04014 SEDEX à vista 
-            04510 PAC à vista 
-            12483 CARTA REGISTRADA
-            04782 SEDEX 12 ( à vista) 
-            04790 SEDEX 10 (à vista) 
-            04804 SEDEX Hoje à vista 
-            */
-
             List<string> codigos = new List<string>();
 
-            if (checkBoxOpcaoSedex.Checked) codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEXAVista);
-            if (checkBoxOpcaoPAC.Checked) codigos.Add(ConfiguracoesExcel.CodigoSARAParaPACAVista);
-            if (checkBoxOpcaoCartaRegistrada.Checked) codigos.Add(ConfiguracoesExcel.CodigoSARAParaCartaRegistradaAVista);
-            if (checkBoxOpcaoSedex12.Checked) codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEX12AVista);
-            if (checkBoxOpcaoSedex10.Checked) codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEX10AVista);
-            if (checkBoxOpcaoSedexHoje.Checked) codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEXHojeAVista);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaCartaRegistradaAVista);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEXAVista);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaPACAVista);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEX12AVista);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEX10AVista);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEXHojeAVista);
+
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaCartaRegistradaAFaturar);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEXAFaturar);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaPACAFaturar);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaPACMiniAFaturar);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEX12AFaturar);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEX10AFaturar);
+            codigos.Add(ConfiguracoesExcel.CodigoSARAParaSEDEXHojeAFaturar);
+
+
+
 
             return codigos;
         }
@@ -509,7 +469,13 @@ namespace CorreiosPrecosEPrazo
             decimal valorPagamentoEntregaComVPNe = Convert.ToDecimal("0"); //inicia com zero.. seta valor se for marcado... //Pagamento na Entrega com VPNe: R$ 16,71
 
             lbEntregaSedex.Text = "Dia da postagem + " + precoEPrazo.PrazoEntrega + " dia(s) útil";
+            LblSedexPrazo.Text = precoEPrazo.PrazoEntrega;
+
             lbPrecoSedex.Text = Helpers.returnDinheiro(precoEPrazo.ValorSemAdicionais);
+            LblSedexValorAVista.Text = Helpers.returnDinheiro(precoEPrazo.ValorSemAdicionais);
+            LblSedexValorContrato.Text = Helpers.returnDinheiro(precoEPrazo.ValorSemAdicionais);
+            LblSedexDiferenca.Text = Helpers.returnDinheiro(0);
+
             lbMaoSedex.Text = Helpers.returnDinheiro(precoEPrazo.ValorMaoPropria);
             lbRecebimentoSedex.Text = Helpers.returnDinheiro(precoEPrazo.ValorAvisoRecebimento);
             lbValorDeclaradoSedex.Text = Helpers.returnDinheiro(precoEPrazo.ValorValorDeclarado);
@@ -647,7 +613,11 @@ namespace CorreiosPrecosEPrazo
             //decimal PrecoServico = Convert.ToDecimal( + );
             decimal valorPorte = retornaPorteCartaRegistradaPeloPeso(tbPeso.Value);
             lbEntregaCartaRegistrada.Text = "Dia da postagem + " + Convert.ToString(Convert.ToInt32(precoEPrazo.PrazoEntrega) + 7) + " dia(s) útil";
+            LblCartaRegistradaPrazo.Text = Convert.ToString(Convert.ToInt32(precoEPrazo.PrazoEntrega) + 7);
+
             lbPrecoCartaRegistrada.Text = Helpers.returnDinheiro(valorPorte.ToString());
+            LblCartaRegistradaValorAVista.Text = Helpers.returnDinheiro(valorPorte.ToString());
+
             lbMaoCartaRegistrada.Text = Helpers.returnDinheiro(cbMaoPropria.Checked ? ConfiguracoesExcel.MaoPropria : "0,00");
             lbRecebimentoCartaRegistrada.Text = Helpers.returnDinheiro(cbAvisoRecebimento.Checked ? ConfiguracoesExcel.AvisoRecebimento : "0,00");
             lbValorDeclaradoCartaRegistrada.Text = Helpers.returnDinheiro(precoEPrazo.ValorValorDeclarado);
@@ -1175,13 +1145,9 @@ namespace CorreiosPrecosEPrazo
             cbAvisoRecebimento.Checked = true;
             cbMaoPropria.Checked = false;
             tbPeso.Value = Convert.ToDecimal("0,300");
-            tbDiametro.Value = 0;
             tbComprimento.Value = 16;
             tbLargura.Value = 11;
             tbAltura.Value = 2;
-            rbCaixa.Checked = true;
-            checkBoxOpcaoSedex12.Checked = checkBoxOpcaoSedex10.Checked = checkBoxOpcaoSedexHoje.Checked = false;
-            checkBoxOpcaoSedex.Checked = checkBoxOpcaoPAC.Checked = checkBoxOpcaoCartaRegistrada.Checked = true;
             tbCepOrigem.Text = tbCepDestino.Text = ConfiguracoesExcel.CEPOrigem;
             rbPorCEP.Checked = true;
 
@@ -1484,61 +1450,8 @@ namespace CorreiosPrecosEPrazo
                 e.SuppressKeyPress = true;
                 SendKeys.Send("{TAB}");
             }
-        }
-
-        /// <summary>
-        ///     Permite apenas números no TextBox diâmetro
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        ///
-        private void tbDiametro_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tbDiametro_Enter(object sender, EventArgs e)
-        {
-            tbDiametro.Select(0, tbDiametro.Text.Length);
-            if (MouseButtons == MouseButtons.Left)
-            {
-                selectByMouse = true;
-            }
-        }
-
-        private void tbDiametro_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-                SendKeys.Send("{TAB}");
-            }
-        }
-
-        /// <summary>
-        ///     Formata o texto para decimal
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        ///
-        private void tbDiametro_TextChanged(object sender, EventArgs e)
-        {
-            Helpers.retornarMoedaFormatada(ref tbDiametro);
-        }
-
-        private void tbDiametro_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (selectByMouse)
-            {
-                tbDiametro.Select(0, tbDiametro.Text.Length);
-                selectByMouse = false;
-            }
-        }
-
+        }        
+        
         private void tbPeso_Enter(object sender, EventArgs e)
         {
             tbPeso.Select(0, tbPeso.Text.Length);

@@ -28,17 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrecosEPrazo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrecosEPrazoContrato));
             this.label1 = new System.Windows.Forms.Label();
             this.tbCepOrigem = new System.Windows.Forms.MaskedTextBox();
             this.tbCepDestino = new System.Windows.Forms.MaskedTextBox();
             this.LbCEPDestino = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.rbCaixa = new System.Windows.Forms.RadioButton();
-            this.rbEnvelope = new System.Windows.Forms.RadioButton();
-            this.rbCilindro = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.LblAltura = new System.Windows.Forms.Label();
             this.LblLargura = new System.Windows.Forms.Label();
             this.LblComprimento = new System.Windows.Forms.Label();
@@ -236,29 +230,19 @@
             this.PainelSedex10 = new System.Windows.Forms.Panel();
             this.PainelSedexHoje = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.LblDiametro = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.tbAltura = new System.Windows.Forms.NumericUpDown();
             this.tbLargura = new System.Windows.Forms.NumericUpDown();
             this.tbComprimento = new System.Windows.Forms.NumericUpDown();
-            this.tbDiametro = new System.Windows.Forms.NumericUpDown();
             this.tbPeso = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.tbDeclaracaoValor = new System.Windows.Forms.NumericUpDown();
-            this.checkBoxOpcaoSedex = new System.Windows.Forms.CheckBox();
-            this.checkBoxOpcaoPAC = new System.Windows.Forms.CheckBox();
-            this.checkBoxOpcaoCartaRegistrada = new System.Windows.Forms.CheckBox();
-            this.checkBoxOpcaoSedex12 = new System.Windows.Forms.CheckBox();
-            this.checkBoxOpcaoSedex10 = new System.Windows.Forms.CheckBox();
-            this.checkBoxOpcaoSedexHoje = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.TxtSenha = new System.Windows.Forms.TextBox();
             this.TxtContrato = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnBuscarDimensoesCaixa = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -284,6 +268,94 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label15 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel151 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel138 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel125 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel112 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel99 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel86 = new System.Windows.Forms.Panel();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel85 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.panel87 = new System.Windows.Forms.Panel();
+            this.panel88 = new System.Windows.Forms.Panel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.panel93 = new System.Windows.Forms.Panel();
+            this.panel94 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel95 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel96 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel98 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.panel100 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.LblSedexPrazo = new System.Windows.Forms.Label();
+            this.LblPacPrazo = new System.Windows.Forms.Label();
+            this.LblPacMiniEnviosPrazo = new System.Windows.Forms.Label();
+            this.LblSedexHojePrazo = new System.Windows.Forms.Label();
+            this.LblSedexDezPrazo = new System.Windows.Forms.Label();
+            this.LblSedexDozePrazo = new System.Windows.Forms.Label();
+            this.panel101 = new System.Windows.Forms.Panel();
+            this.LblCartaRegistradaValorAVista = new System.Windows.Forms.Label();
+            this.panel102 = new System.Windows.Forms.Panel();
+            this.LblSedexValorAVista = new System.Windows.Forms.Label();
+            this.panel103 = new System.Windows.Forms.Panel();
+            this.LblPacValorAVista = new System.Windows.Forms.Label();
+            this.panel104 = new System.Windows.Forms.Panel();
+            this.LblPacMiniEnviosValorAVista = new System.Windows.Forms.Label();
+            this.panel105 = new System.Windows.Forms.Panel();
+            this.LblSedexHojeValorAVista = new System.Windows.Forms.Label();
+            this.panel106 = new System.Windows.Forms.Panel();
+            this.LblSedexDezValorAVista = new System.Windows.Forms.Label();
+            this.panel107 = new System.Windows.Forms.Panel();
+            this.LblSedexDozeValorAVista = new System.Windows.Forms.Label();
+            this.panel108 = new System.Windows.Forms.Panel();
+            this.LblPacValorContrato = new System.Windows.Forms.Label();
+            this.panel109 = new System.Windows.Forms.Panel();
+            this.LblPacMiniEnviosValorContrato = new System.Windows.Forms.Label();
+            this.panel110 = new System.Windows.Forms.Panel();
+            this.LblSedexValorContrato = new System.Windows.Forms.Label();
+            this.panel111 = new System.Windows.Forms.Panel();
+            this.LblSedexHojeValorContrato = new System.Windows.Forms.Label();
+            this.panel113 = new System.Windows.Forms.Panel();
+            this.LblCartaRegistradaValorContrato = new System.Windows.Forms.Label();
+            this.panel114 = new System.Windows.Forms.Panel();
+            this.LblSedexDezValorContrato = new System.Windows.Forms.Label();
+            this.panel115 = new System.Windows.Forms.Panel();
+            this.LblSedexDozeValorContrato = new System.Windows.Forms.Label();
+            this.panel116 = new System.Windows.Forms.Panel();
+            this.LblSedexDiferenca = new System.Windows.Forms.Label();
+            this.panel117 = new System.Windows.Forms.Panel();
+            this.LblSedexHojeDiferenca = new System.Windows.Forms.Label();
+            this.panel118 = new System.Windows.Forms.Panel();
+            this.LblPacMiniEnviosDiferenca = new System.Windows.Forms.Label();
+            this.panel119 = new System.Windows.Forms.Panel();
+            this.LblPacDiferenca = new System.Windows.Forms.Label();
+            this.panel120 = new System.Windows.Forms.Panel();
+            this.LblSedexDezDiferenca = new System.Windows.Forms.Label();
+            this.panel121 = new System.Windows.Forms.Panel();
+            this.LblCartaRegistradaDiferenca = new System.Windows.Forms.Label();
+            this.panel122 = new System.Windows.Forms.Panel();
+            this.LblSedexDozeDiferenca = new System.Windows.Forms.Label();
+            this.LblCartaRegistradaPrazo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -387,12 +459,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbAltura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLargura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComprimento)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDiametro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPeso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDeclaracaoValor)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -403,6 +472,58 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel151.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel138.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel125.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel112.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel99.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel86.SuspendLayout();
+            this.panel90.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel85.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel87.SuspendLayout();
+            this.panel88.SuspendLayout();
+            this.panel89.SuspendLayout();
+            this.panel91.SuspendLayout();
+            this.panel92.SuspendLayout();
+            this.panel93.SuspendLayout();
+            this.panel94.SuspendLayout();
+            this.panel95.SuspendLayout();
+            this.panel96.SuspendLayout();
+            this.panel97.SuspendLayout();
+            this.panel98.SuspendLayout();
+            this.panel100.SuspendLayout();
+            this.panel101.SuspendLayout();
+            this.panel102.SuspendLayout();
+            this.panel103.SuspendLayout();
+            this.panel104.SuspendLayout();
+            this.panel105.SuspendLayout();
+            this.panel106.SuspendLayout();
+            this.panel107.SuspendLayout();
+            this.panel108.SuspendLayout();
+            this.panel109.SuspendLayout();
+            this.panel110.SuspendLayout();
+            this.panel111.SuspendLayout();
+            this.panel113.SuspendLayout();
+            this.panel114.SuspendLayout();
+            this.panel115.SuspendLayout();
+            this.panel116.SuspendLayout();
+            this.panel117.SuspendLayout();
+            this.panel118.SuspendLayout();
+            this.panel119.SuspendLayout();
+            this.panel120.SuspendLayout();
+            this.panel121.SuspendLayout();
+            this.panel122.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -457,91 +578,11 @@
             this.LbCEPDestino.TabIndex = 3;
             this.LbCEPDestino.Text = "CEP de destino";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(5, -3);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(242, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Selecione o serviço desejado";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label5.Location = new System.Drawing.Point(5, -3);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Informe o formato";
-            // 
-            // rbCaixa
-            // 
-            this.rbCaixa.AutoSize = true;
-            this.rbCaixa.Checked = true;
-            this.rbCaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbCaixa.Location = new System.Drawing.Point(10, 22);
-            this.rbCaixa.Margin = new System.Windows.Forms.Padding(2);
-            this.rbCaixa.Name = "rbCaixa";
-            this.rbCaixa.Size = new System.Drawing.Size(116, 21);
-            this.rbCaixa.TabIndex = 1;
-            this.rbCaixa.TabStop = true;
-            this.rbCaixa.Text = "Caixa / Pacote";
-            this.rbCaixa.UseVisualStyleBackColor = true;
-            this.rbCaixa.Click += new System.EventHandler(this.rbCaixa_Click);
-            this.rbCaixa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rbCaixa_KeyDown);
-            // 
-            // rbEnvelope
-            // 
-            this.rbEnvelope.AutoSize = true;
-            this.rbEnvelope.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEnvelope.Location = new System.Drawing.Point(170, 22);
-            this.rbEnvelope.Margin = new System.Windows.Forms.Padding(2);
-            this.rbEnvelope.Name = "rbEnvelope";
-            this.rbEnvelope.Size = new System.Drawing.Size(85, 21);
-            this.rbEnvelope.TabIndex = 2;
-            this.rbEnvelope.Text = "Envelope";
-            this.rbEnvelope.UseVisualStyleBackColor = true;
-            this.rbEnvelope.Click += new System.EventHandler(this.rbEnvelope_Click);
-            this.rbEnvelope.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rbEnvelope_KeyDown);
-            // 
-            // rbCilindro
-            // 
-            this.rbCilindro.AutoSize = true;
-            this.rbCilindro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbCilindro.Location = new System.Drawing.Point(300, 22);
-            this.rbCilindro.Margin = new System.Windows.Forms.Padding(2);
-            this.rbCilindro.Name = "rbCilindro";
-            this.rbCilindro.Size = new System.Drawing.Size(179, 21);
-            this.rbCilindro.TabIndex = 3;
-            this.rbCilindro.Text = "Rolo / Cilindro ou Esfera";
-            this.rbCilindro.UseVisualStyleBackColor = true;
-            this.rbCilindro.Click += new System.EventHandler(this.rbCilindro_Click);
-            this.rbCilindro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rbCilindro_KeyDown);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(15, 57);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Dimensões";
-            // 
             // LblAltura
             // 
             this.LblAltura.AutoSize = true;
             this.LblAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAltura.Location = new System.Drawing.Point(7, 23);
+            this.LblAltura.Location = new System.Drawing.Point(210, 23);
             this.LblAltura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAltura.Name = "LblAltura";
             this.LblAltura.Size = new System.Drawing.Size(77, 17);
@@ -552,7 +593,7 @@
             // 
             this.LblLargura.AutoSize = true;
             this.LblLargura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLargura.Location = new System.Drawing.Point(134, 23);
+            this.LblLargura.Location = new System.Drawing.Point(337, 23);
             this.LblLargura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLargura.Name = "LblLargura";
             this.LblLargura.Size = new System.Drawing.Size(90, 17);
@@ -563,7 +604,7 @@
             // 
             this.LblComprimento.AutoSize = true;
             this.LblComprimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblComprimento.Location = new System.Drawing.Point(258, 23);
+            this.LblComprimento.Location = new System.Drawing.Point(461, 23);
             this.LblComprimento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblComprimento.Name = "LblComprimento";
             this.LblComprimento.Size = new System.Drawing.Size(123, 17);
@@ -3064,23 +3105,12 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // LblDiametro
-            // 
-            this.LblDiametro.AutoSize = true;
-            this.LblDiametro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDiametro.Location = new System.Drawing.Point(385, 23);
-            this.LblDiametro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblDiametro.Name = "LblDiametro";
-            this.LblDiametro.Size = new System.Drawing.Size(97, 17);
-            this.LblDiametro.TabIndex = 6;
-            this.LblDiametro.Text = "Diâmetro (cm)";
-            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnBuscar.Location = new System.Drawing.Point(5, 516);
+            this.btnBuscar.Location = new System.Drawing.Point(5, 393);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(114, 34);
@@ -3099,7 +3129,7 @@
             0,
             0,
             65536});
-            this.tbAltura.Location = new System.Drawing.Point(9, 42);
+            this.tbAltura.Location = new System.Drawing.Point(212, 42);
             this.tbAltura.Name = "tbAltura";
             this.tbAltura.Size = new System.Drawing.Size(120, 23);
             this.tbAltura.TabIndex = 1;
@@ -3122,7 +3152,7 @@
             0,
             0,
             65536});
-            this.tbLargura.Location = new System.Drawing.Point(135, 43);
+            this.tbLargura.Location = new System.Drawing.Point(338, 43);
             this.tbLargura.Name = "tbLargura";
             this.tbLargura.Size = new System.Drawing.Size(120, 23);
             this.tbLargura.TabIndex = 3;
@@ -3145,7 +3175,7 @@
             0,
             0,
             65536});
-            this.tbComprimento.Location = new System.Drawing.Point(261, 43);
+            this.tbComprimento.Location = new System.Drawing.Point(464, 43);
             this.tbComprimento.Name = "tbComprimento";
             this.tbComprimento.Size = new System.Drawing.Size(120, 23);
             this.tbComprimento.TabIndex = 5;
@@ -3157,24 +3187,6 @@
             this.tbComprimento.Enter += new System.EventHandler(this.tbComprimento_Enter);
             this.tbComprimento.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbComprimento_KeyDown);
             this.tbComprimento.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tbComprimento_MouseDown);
-            // 
-            // tbDiametro
-            // 
-            this.tbDiametro.DecimalPlaces = 2;
-            this.tbDiametro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold);
-            this.tbDiametro.ForeColor = System.Drawing.Color.Red;
-            this.tbDiametro.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.tbDiametro.Location = new System.Drawing.Point(387, 43);
-            this.tbDiametro.Name = "tbDiametro";
-            this.tbDiametro.Size = new System.Drawing.Size(120, 23);
-            this.tbDiametro.TabIndex = 7;
-            this.tbDiametro.Enter += new System.EventHandler(this.tbDiametro_Enter);
-            this.tbDiametro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbDiametro_KeyDown);
-            this.tbDiametro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tbDiametro_MouseDown);
             // 
             // tbPeso
             // 
@@ -3193,7 +3205,7 @@
             0,
             0});
             this.tbPeso.Name = "tbPeso";
-            this.tbPeso.Size = new System.Drawing.Size(168, 23);
+            this.tbPeso.Size = new System.Drawing.Size(109, 23);
             this.tbPeso.TabIndex = 2;
             this.tbPeso.Value = new decimal(new int[] {
             300,
@@ -3261,105 +3273,6 @@
             this.tbDeclaracaoValor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbDeclaracaoValor_KeyDown);
             this.tbDeclaracaoValor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tbDeclaracaoValor_MouseDown);
             // 
-            // checkBoxOpcaoSedex
-            // 
-            this.checkBoxOpcaoSedex.AutoSize = true;
-            this.checkBoxOpcaoSedex.Checked = true;
-            this.checkBoxOpcaoSedex.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOpcaoSedex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxOpcaoSedex.Location = new System.Drawing.Point(11, 23);
-            this.checkBoxOpcaoSedex.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOpcaoSedex.Name = "checkBoxOpcaoSedex";
-            this.checkBoxOpcaoSedex.Size = new System.Drawing.Size(77, 20);
-            this.checkBoxOpcaoSedex.TabIndex = 1;
-            this.checkBoxOpcaoSedex.Text = "&SEDEX";
-            this.checkBoxOpcaoSedex.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedex.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedex_KeyDown);
-            // 
-            // checkBoxOpcaoPAC
-            // 
-            this.checkBoxOpcaoPAC.AutoSize = true;
-            this.checkBoxOpcaoPAC.Checked = true;
-            this.checkBoxOpcaoPAC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOpcaoPAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxOpcaoPAC.Location = new System.Drawing.Point(98, 23);
-            this.checkBoxOpcaoPAC.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOpcaoPAC.Name = "checkBoxOpcaoPAC";
-            this.checkBoxOpcaoPAC.Size = new System.Drawing.Size(57, 20);
-            this.checkBoxOpcaoPAC.TabIndex = 2;
-            this.checkBoxOpcaoPAC.Text = "&PAC";
-            this.checkBoxOpcaoPAC.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoPAC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoPAC_KeyDown);
-            // 
-            // checkBoxOpcaoCartaRegistrada
-            // 
-            this.checkBoxOpcaoCartaRegistrada.AutoSize = true;
-            this.checkBoxOpcaoCartaRegistrada.Checked = true;
-            this.checkBoxOpcaoCartaRegistrada.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOpcaoCartaRegistrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxOpcaoCartaRegistrada.Location = new System.Drawing.Point(167, 22);
-            this.checkBoxOpcaoCartaRegistrada.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOpcaoCartaRegistrada.Name = "checkBoxOpcaoCartaRegistrada";
-            this.checkBoxOpcaoCartaRegistrada.Size = new System.Drawing.Size(180, 20);
-            this.checkBoxOpcaoCartaRegistrada.TabIndex = 3;
-            this.checkBoxOpcaoCartaRegistrada.Text = "&CARTA REGISTRADA";
-            this.checkBoxOpcaoCartaRegistrada.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoCartaRegistrada.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoCartaRegistrada_KeyDown);
-            // 
-            // checkBoxOpcaoSedex12
-            // 
-            this.checkBoxOpcaoSedex12.AutoSize = true;
-            this.checkBoxOpcaoSedex12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxOpcaoSedex12.Location = new System.Drawing.Point(352, 22);
-            this.checkBoxOpcaoSedex12.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOpcaoSedex12.Name = "checkBoxOpcaoSedex12";
-            this.checkBoxOpcaoSedex12.Size = new System.Drawing.Size(97, 20);
-            this.checkBoxOpcaoSedex12.TabIndex = 4;
-            this.checkBoxOpcaoSedex12.Text = "SEDEX 12";
-            this.checkBoxOpcaoSedex12.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedex12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedex12_KeyDown);
-            // 
-            // checkBoxOpcaoSedex10
-            // 
-            this.checkBoxOpcaoSedex10.AutoSize = true;
-            this.checkBoxOpcaoSedex10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxOpcaoSedex10.Location = new System.Drawing.Point(466, 22);
-            this.checkBoxOpcaoSedex10.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOpcaoSedex10.Name = "checkBoxOpcaoSedex10";
-            this.checkBoxOpcaoSedex10.Size = new System.Drawing.Size(97, 20);
-            this.checkBoxOpcaoSedex10.TabIndex = 5;
-            this.checkBoxOpcaoSedex10.Text = "SEDEX 10";
-            this.checkBoxOpcaoSedex10.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedex10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedex10_KeyDown);
-            // 
-            // checkBoxOpcaoSedexHoje
-            // 
-            this.checkBoxOpcaoSedexHoje.AutoSize = true;
-            this.checkBoxOpcaoSedexHoje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxOpcaoSedexHoje.Location = new System.Drawing.Point(574, 22);
-            this.checkBoxOpcaoSedexHoje.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOpcaoSedexHoje.Name = "checkBoxOpcaoSedexHoje";
-            this.checkBoxOpcaoSedexHoje.Size = new System.Drawing.Size(121, 20);
-            this.checkBoxOpcaoSedexHoje.TabIndex = 6;
-            this.checkBoxOpcaoSedexHoje.Text = "SEDEX HOJE";
-            this.checkBoxOpcaoSedexHoje.UseVisualStyleBackColor = true;
-            this.checkBoxOpcaoSedexHoje.KeyDown += new System.Windows.Forms.KeyEventHandler(this.checkBoxOpcaoSedexHoje_KeyDown);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.checkBoxOpcaoSedex);
-            this.groupBox1.Controls.Add(this.checkBoxOpcaoPAC);
-            this.groupBox1.Controls.Add(this.checkBoxOpcaoCartaRegistrada);
-            this.groupBox1.Controls.Add(this.checkBoxOpcaoSedex12);
-            this.groupBox1.Controls.Add(this.checkBoxOpcaoSedex10);
-            this.groupBox1.Controls.Add(this.checkBoxOpcaoSedexHoje);
-            this.groupBox1.Location = new System.Drawing.Point(9, 267);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(723, 53);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.TxtSenha);
@@ -3415,28 +3328,12 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Senha";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.BtnBuscarDimensoesCaixa);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.rbCaixa);
-            this.groupBox3.Controls.Add(this.rbEnvelope);
-            this.groupBox3.Controls.Add(this.groupBox5);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.rbCilindro);
-            this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Location = new System.Drawing.Point(9, 109);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(723, 152);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            // 
             // BtnBuscarDimensoesCaixa
             // 
             this.BtnBuscarDimensoesCaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscarDimensoesCaixa.Location = new System.Drawing.Point(528, 17);
+            this.BtnBuscarDimensoesCaixa.Location = new System.Drawing.Point(9, 23);
             this.BtnBuscarDimensoesCaixa.Name = "BtnBuscarDimensoesCaixa";
-            this.BtnBuscarDimensoesCaixa.Size = new System.Drawing.Size(189, 31);
+            this.BtnBuscarDimensoesCaixa.Size = new System.Drawing.Size(196, 43);
             this.BtnBuscarDimensoesCaixa.TabIndex = 4;
             this.BtnBuscarDimensoesCaixa.TabStop = false;
             this.BtnBuscarDimensoesCaixa.Text = "[F2] - Buscar dimensões";
@@ -3448,25 +3345,25 @@
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Controls.Add(this.tbPeso);
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Location = new System.Drawing.Point(533, 60);
+            this.groupBox5.Location = new System.Drawing.Point(604, 112);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(184, 78);
+            this.groupBox5.Size = new System.Drawing.Size(128, 78);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.BtnBuscarDimensoesCaixa);
             this.groupBox4.Controls.Add(this.tbAltura);
-            this.groupBox4.Controls.Add(this.tbDiametro);
             this.groupBox4.Controls.Add(this.tbComprimento);
             this.groupBox4.Controls.Add(this.tbLargura);
             this.groupBox4.Controls.Add(this.LblAltura);
             this.groupBox4.Controls.Add(this.LblLargura);
             this.groupBox4.Controls.Add(this.LblComprimento);
-            this.groupBox4.Controls.Add(this.LblDiametro);
-            this.groupBox4.Location = new System.Drawing.Point(10, 60);
+            this.groupBox4.Location = new System.Drawing.Point(8, 112);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(517, 78);
+            this.groupBox4.Size = new System.Drawing.Size(590, 78);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             // 
@@ -3480,7 +3377,7 @@
             this.groupBox6.Controls.Add(this.cbPagamentoEntrega);
             this.groupBox6.Controls.Add(this.cbDeclaracaoDeValor);
             this.groupBox6.Controls.Add(this.LbInformeOValorDeclarado);
-            this.groupBox6.Location = new System.Drawing.Point(9, 326);
+            this.groupBox6.Location = new System.Drawing.Point(9, 193);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(723, 90);
             this.groupBox6.TabIndex = 4;
@@ -3613,7 +3510,7 @@
             this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLimpar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnLimpar.Location = new System.Drawing.Point(618, 516);
+            this.BtnLimpar.Location = new System.Drawing.Point(618, 393);
             this.BtnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnLimpar.Name = "BtnLimpar";
             this.BtnLimpar.Size = new System.Drawing.Size(114, 34);
@@ -3641,7 +3538,7 @@
             this.groupBox8.Controls.Add(this.label2);
             this.groupBox8.Controls.Add(this.BtnBuscarProdutosAdicionais);
             this.groupBox8.Controls.Add(this.listBox1);
-            this.groupBox8.Location = new System.Drawing.Point(8, 422);
+            this.groupBox8.Location = new System.Drawing.Point(8, 289);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(724, 95);
             this.groupBox8.TabIndex = 5;
@@ -3700,6 +3597,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -3710,14 +3608,14 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.btnBuscar);
             this.tabPage1.Controls.Add(this.BtnLimpar);
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -3730,12 +3628,12 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label15.Location = new System.Drawing.Point(16, 552);
+            this.label15.Location = new System.Drawing.Point(20, 440);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(593, 20);
+            this.label15.Size = new System.Drawing.Size(695, 24);
             this.label15.TabIndex = 9;
             this.label15.Text = "Desenvolvido por: Marques Fonseca (63) 99208-2269 - Atualização dia 04/11/2021";
             // 
@@ -3750,7 +3648,1105 @@
             this.tabPage2.Text = "Resultado";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // PrecosEPrazo
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label5.Location = new System.Drawing.Point(6, -4);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 20);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Dimensões";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.panel85);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1315, 575);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.Controls.Add(this.panel86, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel99, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel112, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel125, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel138, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel151, 5, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(144, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1168, 501);
+            this.tableLayoutPanel2.TabIndex = 94;
+            // 
+            // panel151
+            // 
+            this.panel151.Controls.Add(this.panel100);
+            this.panel151.Location = new System.Drawing.Point(973, 3);
+            this.panel151.Name = "panel151";
+            this.panel151.Size = new System.Drawing.Size(192, 495);
+            this.panel151.TabIndex = 0;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.Location = new System.Drawing.Point(6, 307);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox12.TabIndex = 78;
+            this.pictureBox12.TabStop = false;
+            // 
+            // panel138
+            // 
+            this.panel138.Controls.Add(this.panel98);
+            this.panel138.Location = new System.Drawing.Point(779, 3);
+            this.panel138.Name = "panel138";
+            this.panel138.Size = new System.Drawing.Size(188, 495);
+            this.panel138.TabIndex = 1;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(6, 364);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox11.TabIndex = 64;
+            this.pictureBox11.TabStop = false;
+            // 
+            // panel125
+            // 
+            this.panel125.Controls.Add(this.panel122);
+            this.panel125.Controls.Add(this.panel97);
+            this.panel125.Controls.Add(this.panel121);
+            this.panel125.Controls.Add(this.panel116);
+            this.panel125.Controls.Add(this.panel120);
+            this.panel125.Controls.Add(this.panel117);
+            this.panel125.Controls.Add(this.panel119);
+            this.panel125.Controls.Add(this.panel118);
+            this.panel125.Location = new System.Drawing.Point(585, 3);
+            this.panel125.Name = "panel125";
+            this.panel125.Size = new System.Drawing.Size(188, 495);
+            this.panel125.TabIndex = 3;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(6, 421);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox10.TabIndex = 64;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panel112
+            // 
+            this.panel112.Controls.Add(this.panel115);
+            this.panel112.Controls.Add(this.panel96);
+            this.panel112.Controls.Add(this.panel113);
+            this.panel112.Controls.Add(this.panel114);
+            this.panel112.Controls.Add(this.panel108);
+            this.panel112.Controls.Add(this.panel109);
+            this.panel112.Controls.Add(this.panel111);
+            this.panel112.Controls.Add(this.panel110);
+            this.panel112.Location = new System.Drawing.Point(391, 3);
+            this.panel112.Name = "panel112";
+            this.panel112.Size = new System.Drawing.Size(188, 495);
+            this.panel112.TabIndex = 4;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(6, 78);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox9.TabIndex = 50;
+            this.pictureBox9.TabStop = false;
+            // 
+            // panel99
+            // 
+            this.panel99.Controls.Add(this.panel107);
+            this.panel99.Controls.Add(this.panel95);
+            this.panel99.Controls.Add(this.panel106);
+            this.panel99.Controls.Add(this.panel101);
+            this.panel99.Controls.Add(this.panel105);
+            this.panel99.Controls.Add(this.panel102);
+            this.panel99.Controls.Add(this.panel104);
+            this.panel99.Controls.Add(this.panel103);
+            this.panel99.Location = new System.Drawing.Point(197, 3);
+            this.panel99.Name = "panel99";
+            this.panel99.Size = new System.Drawing.Size(188, 495);
+            this.panel99.TabIndex = 5;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(6, 193);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox8.TabIndex = 95;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(6, 193);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox7.TabIndex = 96;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel86
+            // 
+            this.panel86.Controls.Add(this.panel93);
+            this.panel86.Controls.Add(this.panel92);
+            this.panel86.Controls.Add(this.panel91);
+            this.panel86.Controls.Add(this.panel89);
+            this.panel86.Controls.Add(this.panel88);
+            this.panel86.Controls.Add(this.panel87);
+            this.panel86.Controls.Add(this.panel94);
+            this.panel86.Controls.Add(this.panel90);
+            this.panel86.Location = new System.Drawing.Point(3, 3);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(188, 495);
+            this.panel86.TabIndex = 2;
+            // 
+            // panel90
+            // 
+            this.panel90.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel90.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel90.Controls.Add(this.LblCartaRegistradaPrazo);
+            this.panel90.Location = new System.Drawing.Point(2, 72);
+            this.panel90.Margin = new System.Windows.Forms.Padding(2);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(184, 53);
+            this.panel90.TabIndex = 30;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(6, 135);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox4.TabIndex = 50;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 135);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label3.Location = new System.Drawing.Point(16, 522);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(593, 20);
+            this.label3.TabIndex = 97;
+            this.label3.Text = "Desenvolvido por: Marques Fonseca (63) 99208-2269 - Atualização dia 04/11/2021";
+            // 
+            // panel85
+            // 
+            this.panel85.Controls.Add(this.pictureBox10);
+            this.panel85.Controls.Add(this.pictureBox11);
+            this.panel85.Controls.Add(this.pictureBox12);
+            this.panel85.Controls.Add(this.pictureBox9);
+            this.panel85.Controls.Add(this.pictureBox13);
+            this.panel85.Controls.Add(this.pictureBox8);
+            this.panel85.Controls.Add(this.pictureBox7);
+            this.panel85.Controls.Add(this.pictureBox4);
+            this.panel85.Controls.Add(this.pictureBox1);
+            this.panel85.Controls.Add(this.label3);
+            this.panel85.Controls.Add(this.tableLayoutPanel2);
+            this.panel85.Location = new System.Drawing.Point(-1, 5);
+            this.panel85.Margin = new System.Windows.Forms.Padding(2);
+            this.panel85.Name = "panel85";
+            this.panel85.Size = new System.Drawing.Size(1317, 564);
+            this.panel85.TabIndex = 10;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.BackgroundImage")));
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.Location = new System.Drawing.Point(6, 250);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox13.TabIndex = 95;
+            this.pictureBox13.TabStop = false;
+            // 
+            // panel87
+            // 
+            this.panel87.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel87.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel87.Controls.Add(this.LblSedexPrazo);
+            this.panel87.Location = new System.Drawing.Point(2, 129);
+            this.panel87.Margin = new System.Windows.Forms.Padding(2);
+            this.panel87.Name = "panel87";
+            this.panel87.Size = new System.Drawing.Size(184, 53);
+            this.panel87.TabIndex = 30;
+            // 
+            // panel88
+            // 
+            this.panel88.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel88.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel88.Controls.Add(this.LblPacPrazo);
+            this.panel88.Location = new System.Drawing.Point(2, 187);
+            this.panel88.Margin = new System.Windows.Forms.Padding(2);
+            this.panel88.Name = "panel88";
+            this.panel88.Size = new System.Drawing.Size(184, 53);
+            this.panel88.TabIndex = 30;
+            // 
+            // panel89
+            // 
+            this.panel89.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel89.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel89.Controls.Add(this.LblPacMiniEnviosPrazo);
+            this.panel89.Location = new System.Drawing.Point(2, 244);
+            this.panel89.Margin = new System.Windows.Forms.Padding(2);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(184, 53);
+            this.panel89.TabIndex = 30;
+            // 
+            // panel91
+            // 
+            this.panel91.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel91.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel91.Controls.Add(this.LblSedexHojePrazo);
+            this.panel91.Location = new System.Drawing.Point(2, 301);
+            this.panel91.Margin = new System.Windows.Forms.Padding(2);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(184, 53);
+            this.panel91.TabIndex = 30;
+            // 
+            // panel92
+            // 
+            this.panel92.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel92.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel92.Controls.Add(this.LblSedexDezPrazo);
+            this.panel92.Location = new System.Drawing.Point(2, 358);
+            this.panel92.Margin = new System.Windows.Forms.Padding(2);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(184, 53);
+            this.panel92.TabIndex = 30;
+            // 
+            // panel93
+            // 
+            this.panel93.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel93.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel93.Controls.Add(this.LblSedexDozePrazo);
+            this.panel93.Location = new System.Drawing.Point(2, 415);
+            this.panel93.Margin = new System.Windows.Forms.Padding(2);
+            this.panel93.Name = "panel93";
+            this.panel93.Size = new System.Drawing.Size(184, 53);
+            this.panel93.TabIndex = 30;
+            // 
+            // panel94
+            // 
+            this.panel94.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel94.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel94.Controls.Add(this.label20);
+            this.panel94.Location = new System.Drawing.Point(2, 2);
+            this.panel94.Margin = new System.Windows.Forms.Padding(2);
+            this.panel94.Name = "panel94";
+            this.panel94.Size = new System.Drawing.Size(184, 53);
+            this.panel94.TabIndex = 30;
+            // 
+            // label20
+            // 
+            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label20.Location = new System.Drawing.Point(0, 0);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(184, 53);
+            this.label20.TabIndex = 28;
+            this.label20.Text = "PRAZO (EM DIAS ÚTEIS)";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel95
+            // 
+            this.panel95.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel95.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel95.Controls.Add(this.label21);
+            this.panel95.Location = new System.Drawing.Point(2, 2);
+            this.panel95.Margin = new System.Windows.Forms.Padding(2);
+            this.panel95.Name = "panel95";
+            this.panel95.Size = new System.Drawing.Size(184, 53);
+            this.panel95.TabIndex = 30;
+            // 
+            // label21
+            // 
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label21.Location = new System.Drawing.Point(0, 0);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(184, 53);
+            this.label21.TabIndex = 28;
+            this.label21.Text = "VALOR (A VISTA)";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel96
+            // 
+            this.panel96.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel96.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel96.Controls.Add(this.label22);
+            this.panel96.Location = new System.Drawing.Point(2, 2);
+            this.panel96.Margin = new System.Windows.Forms.Padding(2);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(184, 53);
+            this.panel96.TabIndex = 30;
+            // 
+            // label22
+            // 
+            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label22.Location = new System.Drawing.Point(0, 0);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(184, 53);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "VALOR (CONTRATO)";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel97
+            // 
+            this.panel97.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel97.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel97.Controls.Add(this.label23);
+            this.panel97.Location = new System.Drawing.Point(2, 2);
+            this.panel97.Margin = new System.Windows.Forms.Padding(2);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(184, 53);
+            this.panel97.TabIndex = 30;
+            // 
+            // label23
+            // 
+            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label23.Location = new System.Drawing.Point(0, 0);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(184, 53);
+            this.label23.TabIndex = 28;
+            this.label23.Text = "DIFERENÇA";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel98
+            // 
+            this.panel98.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel98.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel98.Controls.Add(this.label25);
+            this.panel98.Location = new System.Drawing.Point(2, 2);
+            this.panel98.Margin = new System.Windows.Forms.Padding(2);
+            this.panel98.Name = "panel98";
+            this.panel98.Size = new System.Drawing.Size(184, 53);
+            this.panel98.TabIndex = 30;
+            // 
+            // label25
+            // 
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label25.Location = new System.Drawing.Point(0, 0);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(184, 53);
+            this.label25.TabIndex = 28;
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel100
+            // 
+            this.panel100.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel100.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel100.Controls.Add(this.label27);
+            this.panel100.Location = new System.Drawing.Point(5, 2);
+            this.panel100.Margin = new System.Windows.Forms.Padding(2);
+            this.panel100.Name = "panel100";
+            this.panel100.Size = new System.Drawing.Size(184, 53);
+            this.panel100.TabIndex = 30;
+            // 
+            // label27
+            // 
+            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label27.Location = new System.Drawing.Point(0, 0);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(184, 53);
+            this.label27.TabIndex = 28;
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblSedexPrazo
+            // 
+            this.LblSedexPrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexPrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexPrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexPrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexPrazo.Name = "LblSedexPrazo";
+            this.LblSedexPrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexPrazo.TabIndex = 29;
+            this.LblSedexPrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblPacPrazo
+            // 
+            this.LblPacPrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacPrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacPrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblPacPrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacPrazo.Name = "LblPacPrazo";
+            this.LblPacPrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblPacPrazo.TabIndex = 29;
+            this.LblPacPrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblPacMiniEnviosPrazo
+            // 
+            this.LblPacMiniEnviosPrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacMiniEnviosPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacMiniEnviosPrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacMiniEnviosPrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblPacMiniEnviosPrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacMiniEnviosPrazo.Name = "LblPacMiniEnviosPrazo";
+            this.LblPacMiniEnviosPrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblPacMiniEnviosPrazo.TabIndex = 29;
+            this.LblPacMiniEnviosPrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblSedexHojePrazo
+            // 
+            this.LblSedexHojePrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexHojePrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexHojePrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexHojePrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexHojePrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexHojePrazo.Name = "LblSedexHojePrazo";
+            this.LblSedexHojePrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexHojePrazo.TabIndex = 29;
+            this.LblSedexHojePrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblSedexDezPrazo
+            // 
+            this.LblSedexDezPrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDezPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDezPrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDezPrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDezPrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDezPrazo.Name = "LblSedexDezPrazo";
+            this.LblSedexDezPrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDezPrazo.TabIndex = 29;
+            this.LblSedexDezPrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblSedexDozePrazo
+            // 
+            this.LblSedexDozePrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDozePrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDozePrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDozePrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDozePrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDozePrazo.Name = "LblSedexDozePrazo";
+            this.LblSedexDozePrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDozePrazo.TabIndex = 29;
+            this.LblSedexDozePrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel101
+            // 
+            this.panel101.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel101.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel101.Controls.Add(this.LblCartaRegistradaValorAVista);
+            this.panel101.Location = new System.Drawing.Point(2, 72);
+            this.panel101.Margin = new System.Windows.Forms.Padding(2);
+            this.panel101.Name = "panel101";
+            this.panel101.Size = new System.Drawing.Size(184, 53);
+            this.panel101.TabIndex = 30;
+            // 
+            // LblCartaRegistradaValorAVista
+            // 
+            this.LblCartaRegistradaValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCartaRegistradaValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCartaRegistradaValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblCartaRegistradaValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblCartaRegistradaValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCartaRegistradaValorAVista.Name = "LblCartaRegistradaValorAVista";
+            this.LblCartaRegistradaValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblCartaRegistradaValorAVista.TabIndex = 28;
+            this.LblCartaRegistradaValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel102
+            // 
+            this.panel102.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel102.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel102.Controls.Add(this.LblSedexValorAVista);
+            this.panel102.Location = new System.Drawing.Point(2, 129);
+            this.panel102.Margin = new System.Windows.Forms.Padding(2);
+            this.panel102.Name = "panel102";
+            this.panel102.Size = new System.Drawing.Size(184, 53);
+            this.panel102.TabIndex = 30;
+            // 
+            // LblSedexValorAVista
+            // 
+            this.LblSedexValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexValorAVista.Name = "LblSedexValorAVista";
+            this.LblSedexValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexValorAVista.TabIndex = 29;
+            this.LblSedexValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel103
+            // 
+            this.panel103.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel103.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel103.Controls.Add(this.LblPacValorAVista);
+            this.panel103.Location = new System.Drawing.Point(2, 187);
+            this.panel103.Margin = new System.Windows.Forms.Padding(2);
+            this.panel103.Name = "panel103";
+            this.panel103.Size = new System.Drawing.Size(184, 53);
+            this.panel103.TabIndex = 30;
+            // 
+            // LblPacValorAVista
+            // 
+            this.LblPacValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblPacValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacValorAVista.Name = "LblPacValorAVista";
+            this.LblPacValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblPacValorAVista.TabIndex = 29;
+            this.LblPacValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel104
+            // 
+            this.panel104.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel104.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel104.Controls.Add(this.LblPacMiniEnviosValorAVista);
+            this.panel104.Location = new System.Drawing.Point(2, 244);
+            this.panel104.Margin = new System.Windows.Forms.Padding(2);
+            this.panel104.Name = "panel104";
+            this.panel104.Size = new System.Drawing.Size(184, 53);
+            this.panel104.TabIndex = 30;
+            // 
+            // LblPacMiniEnviosValorAVista
+            // 
+            this.LblPacMiniEnviosValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacMiniEnviosValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacMiniEnviosValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacMiniEnviosValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblPacMiniEnviosValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacMiniEnviosValorAVista.Name = "LblPacMiniEnviosValorAVista";
+            this.LblPacMiniEnviosValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblPacMiniEnviosValorAVista.TabIndex = 29;
+            this.LblPacMiniEnviosValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel105
+            // 
+            this.panel105.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel105.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel105.Controls.Add(this.LblSedexHojeValorAVista);
+            this.panel105.Location = new System.Drawing.Point(2, 301);
+            this.panel105.Margin = new System.Windows.Forms.Padding(2);
+            this.panel105.Name = "panel105";
+            this.panel105.Size = new System.Drawing.Size(184, 53);
+            this.panel105.TabIndex = 30;
+            // 
+            // LblSedexHojeValorAVista
+            // 
+            this.LblSedexHojeValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexHojeValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexHojeValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexHojeValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexHojeValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexHojeValorAVista.Name = "LblSedexHojeValorAVista";
+            this.LblSedexHojeValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexHojeValorAVista.TabIndex = 29;
+            this.LblSedexHojeValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel106
+            // 
+            this.panel106.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel106.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel106.Controls.Add(this.LblSedexDezValorAVista);
+            this.panel106.Location = new System.Drawing.Point(2, 358);
+            this.panel106.Margin = new System.Windows.Forms.Padding(2);
+            this.panel106.Name = "panel106";
+            this.panel106.Size = new System.Drawing.Size(184, 53);
+            this.panel106.TabIndex = 30;
+            // 
+            // LblSedexDezValorAVista
+            // 
+            this.LblSedexDezValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDezValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDezValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDezValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDezValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDezValorAVista.Name = "LblSedexDezValorAVista";
+            this.LblSedexDezValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDezValorAVista.TabIndex = 29;
+            this.LblSedexDezValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel107
+            // 
+            this.panel107.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel107.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel107.Controls.Add(this.LblSedexDozeValorAVista);
+            this.panel107.Location = new System.Drawing.Point(2, 415);
+            this.panel107.Margin = new System.Windows.Forms.Padding(2);
+            this.panel107.Name = "panel107";
+            this.panel107.Size = new System.Drawing.Size(184, 53);
+            this.panel107.TabIndex = 30;
+            // 
+            // LblSedexDozeValorAVista
+            // 
+            this.LblSedexDozeValorAVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDozeValorAVista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDozeValorAVista.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDozeValorAVista.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDozeValorAVista.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDozeValorAVista.Name = "LblSedexDozeValorAVista";
+            this.LblSedexDozeValorAVista.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDozeValorAVista.TabIndex = 29;
+            this.LblSedexDozeValorAVista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel108
+            // 
+            this.panel108.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel108.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel108.Controls.Add(this.LblPacValorContrato);
+            this.panel108.Location = new System.Drawing.Point(2, 187);
+            this.panel108.Margin = new System.Windows.Forms.Padding(2);
+            this.panel108.Name = "panel108";
+            this.panel108.Size = new System.Drawing.Size(184, 53);
+            this.panel108.TabIndex = 30;
+            // 
+            // LblPacValorContrato
+            // 
+            this.LblPacValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblPacValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacValorContrato.Name = "LblPacValorContrato";
+            this.LblPacValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblPacValorContrato.TabIndex = 29;
+            this.LblPacValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel109
+            // 
+            this.panel109.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel109.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel109.Controls.Add(this.LblPacMiniEnviosValorContrato);
+            this.panel109.Location = new System.Drawing.Point(2, 244);
+            this.panel109.Margin = new System.Windows.Forms.Padding(2);
+            this.panel109.Name = "panel109";
+            this.panel109.Size = new System.Drawing.Size(184, 53);
+            this.panel109.TabIndex = 30;
+            // 
+            // LblPacMiniEnviosValorContrato
+            // 
+            this.LblPacMiniEnviosValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacMiniEnviosValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacMiniEnviosValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacMiniEnviosValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblPacMiniEnviosValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacMiniEnviosValorContrato.Name = "LblPacMiniEnviosValorContrato";
+            this.LblPacMiniEnviosValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblPacMiniEnviosValorContrato.TabIndex = 29;
+            this.LblPacMiniEnviosValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel110
+            // 
+            this.panel110.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel110.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel110.Controls.Add(this.LblSedexValorContrato);
+            this.panel110.Location = new System.Drawing.Point(2, 129);
+            this.panel110.Margin = new System.Windows.Forms.Padding(2);
+            this.panel110.Name = "panel110";
+            this.panel110.Size = new System.Drawing.Size(184, 53);
+            this.panel110.TabIndex = 30;
+            // 
+            // LblSedexValorContrato
+            // 
+            this.LblSedexValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexValorContrato.Name = "LblSedexValorContrato";
+            this.LblSedexValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexValorContrato.TabIndex = 29;
+            this.LblSedexValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel111
+            // 
+            this.panel111.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel111.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel111.Controls.Add(this.LblSedexHojeValorContrato);
+            this.panel111.Location = new System.Drawing.Point(2, 301);
+            this.panel111.Margin = new System.Windows.Forms.Padding(2);
+            this.panel111.Name = "panel111";
+            this.panel111.Size = new System.Drawing.Size(184, 53);
+            this.panel111.TabIndex = 30;
+            // 
+            // LblSedexHojeValorContrato
+            // 
+            this.LblSedexHojeValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexHojeValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexHojeValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexHojeValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexHojeValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexHojeValorContrato.Name = "LblSedexHojeValorContrato";
+            this.LblSedexHojeValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexHojeValorContrato.TabIndex = 29;
+            this.LblSedexHojeValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel113
+            // 
+            this.panel113.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel113.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel113.Controls.Add(this.LblCartaRegistradaValorContrato);
+            this.panel113.Location = new System.Drawing.Point(2, 72);
+            this.panel113.Margin = new System.Windows.Forms.Padding(2);
+            this.panel113.Name = "panel113";
+            this.panel113.Size = new System.Drawing.Size(184, 53);
+            this.panel113.TabIndex = 30;
+            // 
+            // LblCartaRegistradaValorContrato
+            // 
+            this.LblCartaRegistradaValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCartaRegistradaValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCartaRegistradaValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblCartaRegistradaValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblCartaRegistradaValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCartaRegistradaValorContrato.Name = "LblCartaRegistradaValorContrato";
+            this.LblCartaRegistradaValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblCartaRegistradaValorContrato.TabIndex = 28;
+            this.LblCartaRegistradaValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel114
+            // 
+            this.panel114.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel114.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel114.Controls.Add(this.LblSedexDezValorContrato);
+            this.panel114.Location = new System.Drawing.Point(2, 358);
+            this.panel114.Margin = new System.Windows.Forms.Padding(2);
+            this.panel114.Name = "panel114";
+            this.panel114.Size = new System.Drawing.Size(184, 53);
+            this.panel114.TabIndex = 30;
+            // 
+            // LblSedexDezValorContrato
+            // 
+            this.LblSedexDezValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDezValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDezValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDezValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDezValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDezValorContrato.Name = "LblSedexDezValorContrato";
+            this.LblSedexDezValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDezValorContrato.TabIndex = 29;
+            this.LblSedexDezValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel115
+            // 
+            this.panel115.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel115.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel115.Controls.Add(this.LblSedexDozeValorContrato);
+            this.panel115.Location = new System.Drawing.Point(2, 415);
+            this.panel115.Margin = new System.Windows.Forms.Padding(2);
+            this.panel115.Name = "panel115";
+            this.panel115.Size = new System.Drawing.Size(184, 53);
+            this.panel115.TabIndex = 30;
+            // 
+            // LblSedexDozeValorContrato
+            // 
+            this.LblSedexDozeValorContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDozeValorContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDozeValorContrato.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDozeValorContrato.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDozeValorContrato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDozeValorContrato.Name = "LblSedexDozeValorContrato";
+            this.LblSedexDozeValorContrato.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDozeValorContrato.TabIndex = 29;
+            this.LblSedexDozeValorContrato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel116
+            // 
+            this.panel116.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel116.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel116.Controls.Add(this.LblSedexDiferenca);
+            this.panel116.Location = new System.Drawing.Point(2, 129);
+            this.panel116.Margin = new System.Windows.Forms.Padding(2);
+            this.panel116.Name = "panel116";
+            this.panel116.Size = new System.Drawing.Size(184, 53);
+            this.panel116.TabIndex = 30;
+            // 
+            // LblSedexDiferenca
+            // 
+            this.LblSedexDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDiferenca.Name = "LblSedexDiferenca";
+            this.LblSedexDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDiferenca.TabIndex = 29;
+            this.LblSedexDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel117
+            // 
+            this.panel117.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel117.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel117.Controls.Add(this.LblSedexHojeDiferenca);
+            this.panel117.Location = new System.Drawing.Point(2, 301);
+            this.panel117.Margin = new System.Windows.Forms.Padding(2);
+            this.panel117.Name = "panel117";
+            this.panel117.Size = new System.Drawing.Size(184, 53);
+            this.panel117.TabIndex = 30;
+            // 
+            // LblSedexHojeDiferenca
+            // 
+            this.LblSedexHojeDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexHojeDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexHojeDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexHojeDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexHojeDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexHojeDiferenca.Name = "LblSedexHojeDiferenca";
+            this.LblSedexHojeDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexHojeDiferenca.TabIndex = 29;
+            this.LblSedexHojeDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel118
+            // 
+            this.panel118.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel118.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel118.Controls.Add(this.LblPacMiniEnviosDiferenca);
+            this.panel118.Location = new System.Drawing.Point(2, 244);
+            this.panel118.Margin = new System.Windows.Forms.Padding(2);
+            this.panel118.Name = "panel118";
+            this.panel118.Size = new System.Drawing.Size(184, 53);
+            this.panel118.TabIndex = 30;
+            // 
+            // LblPacMiniEnviosDiferenca
+            // 
+            this.LblPacMiniEnviosDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacMiniEnviosDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacMiniEnviosDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacMiniEnviosDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblPacMiniEnviosDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacMiniEnviosDiferenca.Name = "LblPacMiniEnviosDiferenca";
+            this.LblPacMiniEnviosDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblPacMiniEnviosDiferenca.TabIndex = 29;
+            this.LblPacMiniEnviosDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel119
+            // 
+            this.panel119.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel119.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel119.Controls.Add(this.LblPacDiferenca);
+            this.panel119.Location = new System.Drawing.Point(2, 187);
+            this.panel119.Margin = new System.Windows.Forms.Padding(2);
+            this.panel119.Name = "panel119";
+            this.panel119.Size = new System.Drawing.Size(184, 53);
+            this.panel119.TabIndex = 30;
+            // 
+            // LblPacDiferenca
+            // 
+            this.LblPacDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPacDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPacDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblPacDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblPacDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPacDiferenca.Name = "LblPacDiferenca";
+            this.LblPacDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblPacDiferenca.TabIndex = 29;
+            this.LblPacDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel120
+            // 
+            this.panel120.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel120.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel120.Controls.Add(this.LblSedexDezDiferenca);
+            this.panel120.Location = new System.Drawing.Point(2, 358);
+            this.panel120.Margin = new System.Windows.Forms.Padding(2);
+            this.panel120.Name = "panel120";
+            this.panel120.Size = new System.Drawing.Size(184, 53);
+            this.panel120.TabIndex = 30;
+            // 
+            // LblSedexDezDiferenca
+            // 
+            this.LblSedexDezDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDezDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDezDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDezDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDezDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDezDiferenca.Name = "LblSedexDezDiferenca";
+            this.LblSedexDezDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDezDiferenca.TabIndex = 29;
+            this.LblSedexDezDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel121
+            // 
+            this.panel121.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel121.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel121.Controls.Add(this.LblCartaRegistradaDiferenca);
+            this.panel121.Location = new System.Drawing.Point(2, 72);
+            this.panel121.Margin = new System.Windows.Forms.Padding(2);
+            this.panel121.Name = "panel121";
+            this.panel121.Size = new System.Drawing.Size(184, 53);
+            this.panel121.TabIndex = 30;
+            // 
+            // LblCartaRegistradaDiferenca
+            // 
+            this.LblCartaRegistradaDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCartaRegistradaDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCartaRegistradaDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblCartaRegistradaDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblCartaRegistradaDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCartaRegistradaDiferenca.Name = "LblCartaRegistradaDiferenca";
+            this.LblCartaRegistradaDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblCartaRegistradaDiferenca.TabIndex = 28;
+            this.LblCartaRegistradaDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel122
+            // 
+            this.panel122.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel122.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel122.Controls.Add(this.LblSedexDozeDiferenca);
+            this.panel122.Location = new System.Drawing.Point(2, 415);
+            this.panel122.Margin = new System.Windows.Forms.Padding(2);
+            this.panel122.Name = "panel122";
+            this.panel122.Size = new System.Drawing.Size(184, 53);
+            this.panel122.TabIndex = 30;
+            // 
+            // LblSedexDozeDiferenca
+            // 
+            this.LblSedexDozeDiferenca.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblSedexDozeDiferenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSedexDozeDiferenca.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblSedexDozeDiferenca.Location = new System.Drawing.Point(0, 0);
+            this.LblSedexDozeDiferenca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSedexDozeDiferenca.Name = "LblSedexDozeDiferenca";
+            this.LblSedexDozeDiferenca.Size = new System.Drawing.Size(184, 53);
+            this.LblSedexDozeDiferenca.TabIndex = 29;
+            this.LblSedexDozeDiferenca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblCartaRegistradaPrazo
+            // 
+            this.LblCartaRegistradaPrazo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCartaRegistradaPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCartaRegistradaPrazo.ForeColor = System.Drawing.Color.MediumBlue;
+            this.LblCartaRegistradaPrazo.Location = new System.Drawing.Point(0, 0);
+            this.LblCartaRegistradaPrazo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCartaRegistradaPrazo.Name = "LblCartaRegistradaPrazo";
+            this.LblCartaRegistradaPrazo.Size = new System.Drawing.Size(184, 53);
+            this.LblCartaRegistradaPrazo.TabIndex = 28;
+            this.LblCartaRegistradaPrazo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PrecosEPrazoContrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -3760,7 +4756,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "PrecosEPrazo";
+            this.Name = "PrecosEPrazoContrato";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Correios - Simulador de Preços e Prazos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -3871,15 +4867,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbAltura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLargura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComprimento)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDiametro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPeso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDeclaracaoValor)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -3896,6 +4887,59 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel151.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel138.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel125.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel112.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel99.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel86.ResumeLayout(false);
+            this.panel90.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel85.ResumeLayout(false);
+            this.panel85.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.panel87.ResumeLayout(false);
+            this.panel88.ResumeLayout(false);
+            this.panel89.ResumeLayout(false);
+            this.panel91.ResumeLayout(false);
+            this.panel92.ResumeLayout(false);
+            this.panel93.ResumeLayout(false);
+            this.panel94.ResumeLayout(false);
+            this.panel95.ResumeLayout(false);
+            this.panel96.ResumeLayout(false);
+            this.panel97.ResumeLayout(false);
+            this.panel98.ResumeLayout(false);
+            this.panel100.ResumeLayout(false);
+            this.panel101.ResumeLayout(false);
+            this.panel102.ResumeLayout(false);
+            this.panel103.ResumeLayout(false);
+            this.panel104.ResumeLayout(false);
+            this.panel105.ResumeLayout(false);
+            this.panel106.ResumeLayout(false);
+            this.panel107.ResumeLayout(false);
+            this.panel108.ResumeLayout(false);
+            this.panel109.ResumeLayout(false);
+            this.panel110.ResumeLayout(false);
+            this.panel111.ResumeLayout(false);
+            this.panel113.ResumeLayout(false);
+            this.panel114.ResumeLayout(false);
+            this.panel115.ResumeLayout(false);
+            this.panel116.ResumeLayout(false);
+            this.panel117.ResumeLayout(false);
+            this.panel118.ResumeLayout(false);
+            this.panel119.ResumeLayout(false);
+            this.panel120.ResumeLayout(false);
+            this.panel121.ResumeLayout(false);
+            this.panel122.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3906,12 +4950,6 @@
         private System.Windows.Forms.MaskedTextBox tbCepOrigem;
         private System.Windows.Forms.MaskedTextBox tbCepDestino;
         private System.Windows.Forms.Label LbCEPDestino;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton rbCaixa;
-        private System.Windows.Forms.RadioButton rbEnvelope;
-        private System.Windows.Forms.RadioButton rbCilindro;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label LblAltura;
         private System.Windows.Forms.Label LblLargura;
         private System.Windows.Forms.Label LblComprimento;
@@ -4048,13 +5086,11 @@
         private System.Windows.Forms.Label lbPrecoPAC;
         private System.Windows.Forms.Panel panel65;
         private System.Windows.Forms.Label lbEntregaPAC;
-        private System.Windows.Forms.Label LblDiametro;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.NumericUpDown tbAltura;
         private System.Windows.Forms.NumericUpDown tbLargura;
         private System.Windows.Forms.NumericUpDown tbComprimento;
-        private System.Windows.Forms.NumericUpDown tbDiametro;
         private System.Windows.Forms.NumericUpDown tbPeso;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -4084,9 +5120,6 @@
         private System.Windows.Forms.Label lbPrecoSedex12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbEntregaSedex12;
-        private System.Windows.Forms.CheckBox checkBoxOpcaoSedex;
-        private System.Windows.Forms.CheckBox checkBoxOpcaoPAC;
-        private System.Windows.Forms.CheckBox checkBoxOpcaoCartaRegistrada;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel PainelSedexHoje;
         private System.Windows.Forms.Panel PainelSedex10;
@@ -4119,12 +5152,7 @@
         private System.Windows.Forms.Label lbValorDeclaradoCartaRegistrada;
         private System.Windows.Forms.Panel panel79;
         private System.Windows.Forms.Label lbRecebimentoCartaRegistrada;
-        private System.Windows.Forms.CheckBox checkBoxOpcaoSedex12;
-        private System.Windows.Forms.CheckBox checkBoxOpcaoSedex10;
-        private System.Windows.Forms.CheckBox checkBoxOpcaoSedexHoje;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -4157,6 +5185,94 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel85;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel panel86;
+        private System.Windows.Forms.Panel panel93;
+        private System.Windows.Forms.Panel panel92;
+        private System.Windows.Forms.Panel panel91;
+        private System.Windows.Forms.Panel panel89;
+        private System.Windows.Forms.Panel panel88;
+        private System.Windows.Forms.Panel panel87;
+        private System.Windows.Forms.Panel panel90;
+        private System.Windows.Forms.Panel panel99;
+        private System.Windows.Forms.Panel panel112;
+        private System.Windows.Forms.Panel panel125;
+        private System.Windows.Forms.Panel panel138;
+        private System.Windows.Forms.Panel panel151;
+        private System.Windows.Forms.Panel panel94;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel95;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel panel96;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Panel panel97;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel98;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Panel panel100;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label LblSedexDozePrazo;
+        private System.Windows.Forms.Label LblSedexDezPrazo;
+        private System.Windows.Forms.Label LblSedexHojePrazo;
+        private System.Windows.Forms.Label LblPacMiniEnviosPrazo;
+        private System.Windows.Forms.Label LblPacPrazo;
+        private System.Windows.Forms.Label LblSedexPrazo;
+        private System.Windows.Forms.Label LblCartaRegistradaPrazo;
+        private System.Windows.Forms.Panel panel107;
+        private System.Windows.Forms.Label LblSedexDozeValorAVista;
+        private System.Windows.Forms.Panel panel106;
+        private System.Windows.Forms.Label LblSedexDezValorAVista;
+        private System.Windows.Forms.Panel panel101;
+        private System.Windows.Forms.Label LblCartaRegistradaValorAVista;
+        private System.Windows.Forms.Panel panel105;
+        private System.Windows.Forms.Label LblSedexHojeValorAVista;
+        private System.Windows.Forms.Panel panel102;
+        private System.Windows.Forms.Label LblSedexValorAVista;
+        private System.Windows.Forms.Panel panel104;
+        private System.Windows.Forms.Label LblPacMiniEnviosValorAVista;
+        private System.Windows.Forms.Panel panel103;
+        private System.Windows.Forms.Label LblPacValorAVista;
+        private System.Windows.Forms.Panel panel115;
+        private System.Windows.Forms.Label LblSedexDozeValorContrato;
+        private System.Windows.Forms.Panel panel113;
+        private System.Windows.Forms.Label LblCartaRegistradaValorContrato;
+        private System.Windows.Forms.Panel panel114;
+        private System.Windows.Forms.Label LblSedexDezValorContrato;
+        private System.Windows.Forms.Panel panel108;
+        private System.Windows.Forms.Label LblPacValorContrato;
+        private System.Windows.Forms.Panel panel109;
+        private System.Windows.Forms.Label LblPacMiniEnviosValorContrato;
+        private System.Windows.Forms.Panel panel111;
+        private System.Windows.Forms.Label LblSedexHojeValorContrato;
+        private System.Windows.Forms.Panel panel110;
+        private System.Windows.Forms.Label LblSedexValorContrato;
+        private System.Windows.Forms.Panel panel122;
+        private System.Windows.Forms.Label LblSedexDozeDiferenca;
+        private System.Windows.Forms.Panel panel121;
+        private System.Windows.Forms.Label LblCartaRegistradaDiferenca;
+        private System.Windows.Forms.Panel panel116;
+        private System.Windows.Forms.Label LblSedexDiferenca;
+        private System.Windows.Forms.Panel panel120;
+        private System.Windows.Forms.Label LblSedexDezDiferenca;
+        private System.Windows.Forms.Panel panel117;
+        private System.Windows.Forms.Label LblSedexHojeDiferenca;
+        private System.Windows.Forms.Panel panel119;
+        private System.Windows.Forms.Label LblPacDiferenca;
+        private System.Windows.Forms.Panel panel118;
+        private System.Windows.Forms.Label LblPacMiniEnviosDiferenca;
     }
 }
 

@@ -38,7 +38,7 @@ namespace CorreiosPrecosEPrazo
             if (VerificaChaveAcesso())
             {
                 //Application.Run(new Form1());
-                Application.Run(new PrecosEPrazo());
+                Application.Run(new PrecosEPrazoContrato());
             }
             else
             {
